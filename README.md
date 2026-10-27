@@ -19,7 +19,7 @@ assets/linkedin/    LinkedIn banner artwork, 1584x396
 | --- | --- |
 | `cv.pdf` | the Download CV button in the hero |
 | `images/pavitra.jpg` | hero portrait (portrait crop, ~800x900) |
-| `images/about.jpg` | About section (portrait crop, ~800x1000) |
+| `images/about.jpg` | About section — optional. A planting-plan drawing shows until one is added; a real on-site photo would be stronger. |
 | `images/project-1.jpg` … `project-4.jpg` | project cards (landscape, ~1200x750) |
 
 Until a photo is added, its slot shows a labelled placeholder — nothing breaks.
@@ -27,17 +27,13 @@ Until a photo is added, its slot shows a labelled placeholder — nothing breaks
 Project titles, descriptions and tags in the Work section are placeholders too.
 Edit them in `index.html` under `<!-- ================= WORK ================= -->`.
 
-## Contact form
+## Contact
 
-The form carries Netlify's `data-netlify` attributes, so it works as-is if the
-site is ever hosted on Netlify. On GitHub Pages it needs an external handler —
-sign up at formspree.io and set:
+No contact form. GitHub Pages serves static files only and answers a POST with
+405, so a form here would silently lose messages. The section lists email,
+phone and LinkedIn instead, with a mailto button.
 
-```html
-<form action="https://formspree.io/f/YOUR_ID" method="POST">
-```
-
-Until then the email and phone links above the form work fine.
+If a form is ever wanted, formspree.io handles the backend on a free tier.
 
 ## Editing
 
