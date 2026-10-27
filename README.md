@@ -27,9 +27,6 @@ Until a photo is added, its slot shows a labelled placeholder — nothing breaks
 Project titles, descriptions and tags in the Work section are placeholders too.
 Edit them in `index.html` under `<!-- ================= WORK ================= -->`.
 
-Also replace the LinkedIn URL (`pavitra-g-horticulture`) with the real one — it
-appears twice, in the hero social rail and the contact section.
-
 ## Contact form
 
 The form carries Netlify's `data-netlify` attributes, so it works as-is if the
